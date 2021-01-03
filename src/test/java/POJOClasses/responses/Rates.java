@@ -1,213 +1,201 @@
 package POJOClasses.responses;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Rates {
 
-    private Float gBP, hKD, iDR, iLS, dKK, iNR, cHF, mXN, cZK, sGD, tHB, hRK, mYR, nOK, cNY, bGN,
-            pHP, sEK, pLN, zAR, cAD, iSK, bRL, rON, nZD, tRY, jPY, rUB, kRW, uSD, hUF, aUD;
-
-    /**
-     * No args constructor for use in serialization
-     */
-    public Rates() {
-    }
-
-    /**
-     * @param hKD
-     * @param iSK
-     * @param dKK
-     * @param mYR
-     * @param cAD
-     * @param uSD
-     * @param bGN
-     * @param nOK
-     * @param rON
-     * @param sGD
-     * @param cZK
-     * @param sEK
-     * @param nZD
-     * @param bRL
-     * @param cHF
-     * @param hRK
-     * @param mXN
-     * @param zAR
-     * @param iNR
-     * @param tHB
-     * @param cNY
-     * @param iLS
-     * @param kRW
-     * @param aUD
-     * @param jPY
-     * @param pLN
-     * @param gBP
-     * @param iDR
-     * @param hUF
-     * @param pHP
-     * @param tRY
-     * @param rUB
-     */
-    public Rates(Float gBP, Float hKD, Float iDR, Float iLS, Float dKK, Float iNR, Float cHF, Float mXN, Float cZK, Float sGD, Float tHB, Float hRK, Float mYR, Float nOK, Float cNY, Float bGN, Float pHP, Float sEK, Float pLN, Float zAR, Float cAD, Float iSK, Float bRL, Float rON, Float nZD, Float tRY, Float jPY, Float rUB, Float kRW, Float uSD, Float hUF, Float aUD) {
-        super();
-        this.gBP = gBP;
-        this.hKD = hKD;
-        this.iDR = iDR;
-        this.iLS = iLS;
-        this.dKK = dKK;
-        this.iNR = iNR;
-        this.cHF = cHF;
-        this.mXN = mXN;
-        this.cZK = cZK;
-        this.sGD = sGD;
-        this.tHB = tHB;
-        this.hRK = hRK;
-        this.mYR = mYR;
-        this.nOK = nOK;
-        this.cNY = cNY;
-        this.bGN = bGN;
-        this.pHP = pHP;
-        this.sEK = sEK;
-        this.pLN = pLN;
-        this.zAR = zAR;
-        this.cAD = cAD;
-        this.iSK = iSK;
-        this.bRL = bRL;
-        this.rON = rON;
-        this.nZD = nZD;
-        this.tRY = tRY;
-        this.jPY = jPY;
-        this.rUB = rUB;
-        this.kRW = kRW;
-        this.uSD = uSD;
-        this.hUF = hUF;
-        this.aUD = aUD;
-    }
+    @JsonProperty("GBP")
+    private Float GBP;
+    @JsonProperty("HKD")
+    private Float HKD;
+    @JsonProperty("IDR")
+    private Float IDR;
+    @JsonProperty("ILS")
+    private Float ILS;
+    @JsonProperty("DKK")
+    private Float DKK;
+    @JsonProperty("INR")
+    private Float INR;
+    @JsonProperty("CHF")
+    private Float CHF;
+    @JsonProperty("MXN")
+    private Float MXN;
+    @JsonProperty("CZK")
+    private Float CZK;
+    @JsonProperty("SGD")
+    private Float SGD;
+    @JsonProperty("THB")
+    private Float THB;
+    @JsonProperty("HRK")
+    private Float HRK;
+    @JsonProperty("MYR")
+    private Float MYR;
+    @JsonProperty("NOK")
+    private Float NOK;
+    @JsonProperty("CNY")
+    private Float CNY;
+    @JsonProperty("BGN")
+    private Float BGN;
+    @JsonProperty("PHP")
+    private Float PHP;
+    @JsonProperty("SEK")
+    private Float SEK;
+    @JsonProperty("PLN")
+    private Float PLN;
+    @JsonProperty("ZAR")
+    private Float ZAR;
+    @JsonProperty("CAD")
+    private Float CAD;
+    @JsonProperty("ISK")
+    private Float ISK;
+    @JsonProperty("BRL")
+    private Float BRL;
+    @JsonProperty("RON")
+    private Float RON;
+    @JsonProperty("NZD")
+    private Float NZD;
+    @JsonProperty("TRY")
+    private Float TRY;
+    @JsonProperty("JPY")
+    private Float JPY;
+    @JsonProperty("RUB")
+    private Float RUB;
+    @JsonProperty("KRW")
+    private Float KRW;
+    @JsonProperty("USD")
+    private Float USD;
+    @JsonProperty("HUF")
+    private Float HUF;
+    @JsonProperty("AUD")
+    private Float AUD;
 
     public Float getGBP() {
-        return gBP;
+        return GBP;
     }
 
     public Float getHKD() {
-        return hKD;
+        return HKD;
     }
 
     public Float getIDR() {
-        return iDR;
+        return IDR;
     }
 
     public Float getILS() {
-        return iLS;
+        return ILS;
     }
 
     public Float getDKK() {
-        return dKK;
+        return DKK;
     }
 
     public Float getINR() {
-        return iNR;
+        return INR;
     }
 
     public Float getCHF() {
-        return cHF;
+        return CHF;
     }
 
     public Float getMXN() {
-        return mXN;
+        return MXN;
     }
 
     public Float getCZK() {
-        return cZK;
+        return CZK;
     }
 
     public Float getSGD() {
-        return sGD;
+        return SGD;
     }
 
     public Float getTHB() {
-        return tHB;
+        return THB;
     }
 
     public Float getHRK() {
-        return hRK;
+        return HRK;
     }
 
     public Float getMYR() {
-        return mYR;
+        return MYR;
     }
 
     public Float getNOK() {
-        return nOK;
+        return NOK;
     }
 
     public Float getCNY() {
-        return cNY;
+        return CNY;
     }
 
     public Float getBGN() {
-        return bGN;
+        return BGN;
     }
 
     public Float getPHP() {
-        return pHP;
+        return PHP;
     }
 
     public Float getSEK() {
-        return sEK;
+        return SEK;
     }
 
     public Float getPLN() {
-        return pLN;
+        return PLN;
     }
 
     public Float getZAR() {
-        return zAR;
+        return ZAR;
     }
 
     public Float getCAD() {
-        return cAD;
+        return CAD;
     }
 
     public Float getISK() {
-        return iSK;
+        return ISK;
     }
 
     public Float getBRL() {
-        return bRL;
+        return BRL;
     }
 
     public Float getRON() {
-        return rON;
+        return RON;
     }
 
     public Float getNZD() {
-        return nZD;
+        return NZD;
     }
 
     public Float getTRY() {
-        return tRY;
+        return TRY;
     }
 
     public Float getJPY() {
-        return jPY;
+        return JPY;
     }
 
     public Float getRUB() {
-        return rUB;
+        return RUB;
     }
 
     public Float getKRW() {
-        return kRW;
+        return KRW;
     }
 
     public Float getUSD() {
-        return uSD;
+        return USD;
     }
 
     public Float getHUF() {
-        return hUF;
+        return HUF;
     }
 
     public Float getAUD() {
-        return aUD;
+        return AUD;
     }
 
 }
